@@ -2,7 +2,7 @@ const server = require('http').createServer()
 const io = require('socket.io')(server)
 const { db } = require('./database')
 
-const SOCKET_PORT = 3009
+const SOCKET_PORT = 8081
 
 const initWebSocket = () => {
   io.on('connection', async client => {
